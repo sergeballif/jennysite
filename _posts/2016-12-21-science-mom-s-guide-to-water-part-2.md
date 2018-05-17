@@ -1,6 +1,11 @@
 ---
 layout: post
 published: true
+categories:
+  - experiments
+  - science
+  - foldable
+  - video
 sciencemom: true
 comments: true
 title: 'Science Mom''s Guide to Water, Part 2'
@@ -13,8 +18,6 @@ headline: >-
   guide we explore just how strong surface tension is--and how it can
   change--through several hands-on activities.
 modified: '2017-01-09'
-categories:
-  - Chemistry of Water
 imagefeature: SMG2twitter.png
 folder: SMG2
 sciencemomguideimage: SMG2coverThumbnail.png

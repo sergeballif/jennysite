@@ -108,20 +108,24 @@ prose:
           element: "multiselect"
           label: "Add categories"
           placeholder: "Choose categories"
-          value: personal
+          value: experiments
           options:
-            - name: "Personal"
-              value: personal
+            - name: "Video"
+              value: video
+            - name: "Experiments"
+              value: experiments
             - name: "Math"
               value: math
-            - name: "Teaching"
-              value: teaching
-            - name: "Fun"
-              value: fun
+            - name: "Science"
+              value: science
+            - name: "Foldable"
+              value: foldable
             - name: "Writing"
               value: writing
-            - name: "Interesting"
-              value: interesting
+            - name: "Random"
+              value: random
+            - name: "Patron"
+              value: patron
           alterable: true
       - name: "tags"
         field:
@@ -163,6 +167,13 @@ prose:
           element: "checkbox"
           label: "Comments"
           value: true
+      - name: "worksheets"
+        field:
+          element: "multiselect"
+          label: "Add worksheets."
+          placeholder: "Type exact worksheet file names."
+          value: filename.pdf
+          alterable: true
       - name: "folder"
         field:
           element: "text"

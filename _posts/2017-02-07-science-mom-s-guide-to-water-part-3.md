@@ -1,6 +1,11 @@
 ---
 layout: post
 published: true
+categories:
+  - experiments
+  - science
+  - foldable
+  - video
 sciencemom: true
 comments: true
 title: 'Science Mom''s Guide to Water, Part 3'
@@ -13,8 +18,6 @@ headline: >-
   action can take water any direction. We explore both of these aspects with
   papertowels and siphons.
 modified: '2017-02-07'
-categories:
-  - Science Mom Guide
 tags: 'Siphons, Paper Towels, Water, Food Coloring, Capillary Action, Adhesion'
 videofeature: 'https://www.youtube.com/embed/4OgcPI7S8_o'
 folder: SMG3
