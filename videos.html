@@ -13,7 +13,7 @@ description: "An archive of posts with videos"
     {% for post in site.categories.video %}
     <div class="{% cycle 'bg-grey', 'bg-dark' %}">
       <header class="major text-center">
-          <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h3 style="padding: 1em;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
       </header>
       <section class="container">
         <!-- div col-sm-8 -->
@@ -30,23 +30,33 @@ description: "An archive of posts with videos"
               </div>
             </div></p>
 
-            <!-- Tags -->
-            <div class="widget">
-              <div class="blog-tags">
-                <h5>Tags :</h5>
-                {% for tag in post.categories %}
-              <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag"><i class="fa fa-tag"></i>{{ tag }}</a>
-                {% endfor %}
-              </div>
-            </div>
-            <!-- /Tags -->
-
           </div>
           <!-- /div col-sm-8 -->
 
           <!-- div col-sm-8 -->
           <div class="col-sm-4">
-            buttons and stuff
+            <!-- blog worksheets -->
+            {% assign worksheetsize = post.worksheets.size %}
+            {% if worksheetsize != 0 %}
+            <div class="blog-worksheets">
+              <h5>Worksheets:</h5>
+              {% for tag in post.worksheets %}
+              <a href="{{ site.url }}/images/" data-toggle="tooltip" title="download {{ tag }}" rel="tag"><i class="far fa-map"></i>{{ tag }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <!-- /blog worksheets -->
+
+            <!-- Tags
+            <div class="widget">
+              <div class="blog-tags">
+                <h5>Tags :</h5>
+                {% for tag in post.categories %}
+                <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag"><i class="fas fa-tag"></i>{{ tag }}</a>
+                {% endfor %}
+              </div>
+            </div>
+             /Tags -->
           </div>
           <!-- /div col-sm-8 -->
         </div>

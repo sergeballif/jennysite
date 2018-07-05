@@ -56,8 +56,6 @@ headline: >-
   Come explore cohesion and the basic physics of forces with <b>The Gravity
   Defying Lid</b>, a <b>Magic Screen</b>, and <b>Hot and Cold Water Cups</b>.
 videofeature: 'https://www.youtube.com/embed/IsvHQon2IqQ'
-categories:
-  - personal
 blog: false
 comic: false
 tags: 'experiments, foldable guide, video'

@@ -51,6 +51,11 @@ experiment6time: 10 to 30 minutes
 experiment6supplies: Water; Bowl or cup; Concentrated Dish Soap; Pepper
 experiment6concepts: Surface Tension of Water (Chemistry); Surfactants (Chemistry)
 experiment6image: SMG2f.png
+worksheets:
+ - SMG2-8.5x11.pdf
+ - SMG2-11x17.pdf
+ - SMG2-A4.pdf
+ - SMG2-A3.pdf
 guide1: SMG2-8.5x11.pdf
 guide2: SMG2-11x17.pdf
 guide3: SMG2-A4.pdf

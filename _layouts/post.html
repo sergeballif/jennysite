@@ -9,37 +9,20 @@
         <!-- Main -->
 
             <header>
-              <!-- header wrapper -->
-          		<div class="header-wrapper bg-grey">
-          			<div class="container">
-                  <!-- Row -->
-            			<div class="row">
-                    <!-- Title -->
-                    <div class="col-sm-9 col-sm-push-3">
-                      <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="index.html#blog">Blog</a></li>
-                        <li class="breadcrumb-item active">{{ page.title }}</li>
-                      </ul>
-                      <h2 class="text-right" style="text-align: right">{{ page.title }}</h2>
-                    </div>
-                    <!-- /Title -->
 
-                    <!-- Image -->
-                    <div class="col-sm-3 col-sm-pull-9">
-                    {% if page.imagefeature %}
-                    <div class="blog-img" style="text-align:center;">
-                      <img  src="{{ site.url }}/images/{{ page.folder }}/{{ page.imagefeature }}" alt="" style="width:100%; max-width: 300px; text-align:center;">
-                    </div>
-                    {% endif %}
-                  </div>
-                    <!-- /Image -->
-                  </div>
-                    <!-- /Row -->
-                </div>
+
+              <!-- header wrapper -->
+          		<div class="header-wrapper sm-padding bg-grey">
+          			<div class="container">
+          				<h2>{{ page.title }}</h2>
+          				<ul class="breadcrumb">
+          					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          					<li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+          					<li class="breadcrumb-item active">{{ page.title }}</li>
+          				</ul>
+          			</div>
           		</div>
           		<!-- /header wrapper -->
-            </header>
 
 
         <!-- Blog -->
@@ -65,47 +48,6 @@
               </div>
 
                 {% if page.guide0 %}
-                <div class="row">
-                  <div class="col-sm-3 col-xs-6">
-                    <a href="{{ site.baseurl }}/images/{{ page.folder }}/{{ page.guide1 }}">
-                      <button class="white-btn outline-btn">8.5" &times; 11"</button>
-                    </a>
-                  </div>
-                  <div class="col-sm-3 col-xs-6">
-                    <a href="{{ site.baseurl }}/images/{{ page.folder }}/{{ page.guide2 }}">
-                      <button class="white-btn outline-btn">11" &times; 17"</button>
-                    </a>
-                  </div>
-                  <div class="col-sm-3 col-xs-6">
-                    <a href="{{ site.baseurl }}/images/{{ page.folder }}/{{ page.guide3 }}">
-                      <button class="main-btn outline-btn">A3 paper</button>
-                    </a>
-                  </div>
-                  <a href="{{ site.baseurl }}/images/{{ page.folder }}/{{ page.guide4 }}">
-                    <button class="main-btn outline-btn">A4 paper</button>
-                  </a>
-                  </div>
-                </div>
-
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
-                <button type="button" class="btn btn-info">Info</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-                <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                <button type="button" class="btn btn-outline-success">Success</button>
-                <button type="button" class="btn btn-outline-danger">Danger</button>
-                <button type="button" class="btn btn-outline-warning">Warning</button>
-                <button type="button" class="btn btn-outline-info">Info</button>
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
-
-
                 <p><div id="scroll">
                   <img src="images/{{ page.folder }}/{{ page.guide0 }}">
                 </div></p>
@@ -115,9 +57,9 @@
                 {% assign worksheetsize = page.worksheets.size %}
                 {% if worksheetsize != 0 %}
                 <div class="blog-worksheets">
-                  <h5>Printable Worksheets:</h5>
+                  <h5>Worksheets:</h5>
                   {% for worksheet in page.worksheets %}
-                  <a href="{{ site.url }}/{{ page.folder }}/{{ worksheet | cgi_encode }}" data-toggle="tooltip" title="Worksheet to download {{ worksheet }}" rel="worksheet"><i class="fas fa-file-alt"></i>{{ worksheet }}</a>
+                  <a href="{{ site.url }}/images/{{ page.folder }}/{{ worksheet | cgi_encode }}" data-toggle="tooltip" title="Worksheet to download {{ worksheet }}" rel="worksheet"><i class="far fa-map"></i>{{ worksheet }}</a>
                   {% endfor %}
                 </div>
                 {% endif %}
@@ -288,11 +230,6 @@
                          </footer>
 
                 {% include disqus_comments.html %}
-        	<style>
-        #skel-layers-inactiveWrapper {
-            display: none !important;
-        }
-        </style>
 
         {% include footer.html %}
 

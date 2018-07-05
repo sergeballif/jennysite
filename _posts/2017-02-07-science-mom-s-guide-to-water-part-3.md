@@ -1,11 +1,6 @@
 ---
 layout: post
 published: true
-categories:
-  - experiments
-  - science
-  - foldable
-  - video
 sciencemom: true
 comments: true
 title: 'Science Mom''s Guide to Water, Part 3'
@@ -44,6 +39,16 @@ experiment4time: 30 - 90 min
 experiment4supplies: 'Plastic Bottle, Plastic Tubing, Drill or knife, Glue and Tape'
 experiment4concepts: 'Siphons (Physics), Momentum (Physics), Air Pressure (Physcis), Gravity'
 experiment4image: bottlefountain.png
+categories:
+  - experiments
+  - science
+  - foldable
+  - video
+worksheets:
+ - SMG3-8.5x11.pdf
+ - SMG3-11x17.pdf
+ - SMG3-A4.pdf
+ - SMG3-A3.pdf
 guide0: SMG3wide.png
 guide1: SMG3-8.5x11.pdf
 guide2: SMG3-11x17.pdf

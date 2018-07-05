@@ -166,13 +166,13 @@
       <ul class="main-nav nav navbar-nav navbar-right">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="index.html#service">Services</a></li>
-        <li><a href="index.html#pricing">Prices</a></li>
-        <li><a href="index.html#team">Team</a></li>
-        <li class="has-dropdown"><a>Blog</a>
+        <li><a href="index.html#service">Support</a></li>
+        <li><a href="index.html#testimonial">Team</a></li>
+        <li class="has-dropdown"><a href="index.html#blog">Blog</a>
           <ul class="dropdown">
-            <li><a href="#">blog post</a></li>
+            <li><a href="http://localhost:4000/blog.html">Blog Feed</a></li>
+            <li><a href="http://localhost:4000/videos.html">Video Collection</a></li>
+            <li><a href="http://localhost:4000/activities.html">Activity List</a></li>
           </ul>
         </li>
         <li><a href="index.html#contact">Contact</a></li>
@@ -189,37 +189,20 @@
         <!-- Main -->
 
             <header>
-              <!-- header wrapper -->
-          		<div class="header-wrapper bg-grey">
-          			<div class="container">
-                  <!-- Row -->
-            			<div class="row">
-                    <!-- Title -->
-                    <div class="col-sm-9 col-sm-push-3">
-                      <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="index.html#blog">Blog</a></li>
-                        <li class="breadcrumb-item active">Kendrite</li>
-                      </ul>
-                      <h2 class="text-right" style="text-align: right">Kendrite</h2>
-                    </div>
-                    <!-- /Title -->
 
-                    <!-- Image -->
-                    <div class="col-sm-3 col-sm-pull-9">
-                    
-                    <div class="blog-img" style="text-align:center;">
-                      <img  src="http://localhost:4000/images/Patron/Kendrite.jpeg" alt="" style="width:100%; max-width: 300px; text-align:center;">
-                    </div>
-                    
-                  </div>
-                    <!-- /Image -->
-                  </div>
-                    <!-- /Row -->
-                </div>
+
+              <!-- header wrapper -->
+          		<div class="header-wrapper sm-padding bg-grey">
+          			<div class="container">
+          				<h2>Kendrite</h2>
+          				<ul class="breadcrumb">
+          					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          					<li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+          					<li class="breadcrumb-item active">Kendrite</li>
+          				</ul>
+          			</div>
           		</div>
           		<!-- /header wrapper -->
-            </header>
 
 
         <!-- Blog -->
@@ -274,7 +257,7 @@ Welcome to the table, once again. And thank you so much for being a patron of Sc
                 
                 
                 <div class="blog-worksheets">
-                  <h5>Printable Worksheets:</h5>
+                  <h5>Worksheets:</h5>
                   
                 </div>
                 
@@ -282,6 +265,13 @@ Welcome to the table, once again. And thank you so much for being a patron of Sc
 
                 <!-- blog tags -->
                 
+                
+                <div class="blog-tags">
+                  <h5>Tags:</h5>
+                  
+                  <a href="http://localhost:4000/tags/index.html#patron" data-toggle="tooltip" title="Posts tagged with patron" rel="tag"><i class="fas fa-tag"></i>patron</a>
+                  
+                </div>
                 
       					<!-- blog tags -->
 
@@ -343,17 +333,17 @@ Welcome to the table, once again. And thank you so much for being a patron of Sc
                       
                         
                           
-                            <a href="#experiments">Experiments <span>(4)</span></a>
+                            <a href="#experiments">Experiments <span>(7)</span></a>
                           
-                            <a href="#science">Science <span>(4)</span></a>
+                            <a href="#science">Science <span>(8)</span></a>
                           
-                            <a href="#foldable">Foldable <span>(3)</span></a>
+                            <a href="#foldable">Foldable <span>(6)</span></a>
                           
-                            <a href="#video">Video <span>(3)</span></a>
+                            <a href="#video">Video <span>(7)</span></a>
                           
-                            <a href="#Science Mom Guide">Science mom guide <span>(1)</span></a>
+                            <a href="#random">Random <span>(2)</span></a>
                           
-                            <a href="#personal">Personal <span>(20)</span></a>
+                            <a href="#patron">Patron <span>(25)</span></a>
                           
                         
                       
@@ -478,11 +468,6 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
-        	<style>
-        #skel-layers-inactiveWrapper {
-            display: none !important;
-        }
-        </style>
 
         <!-- Footer -->
 <footer id="footer" class="sm-padding bg-dark">
@@ -497,24 +482,23 @@ s.setAttribute('data-timestamp', +new Date());
 
         <!-- footer logo -->
         <div class="footer-logo">
-          <a href="index.html"><img src="images/HorizontalLogoWhite.png" alt="logo"></a>
+          <a href="index.html"><img class="img-responsive" src="images/HorizontalLogoWhite.png" alt="logo"></a>
         </div>
         <!-- /footer logo -->
 
         <!-- footer follow -->
         <ul class="footer-follow">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://facebook.com/TheScienceMom"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/jennyballif"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/jennyballif"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/sciencemom"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.patreon.com/JennyBallif"><i class="fab fa-patreon"></i> </a></li>
         </ul>
         <!-- /footer follow -->
 
         <!-- footer copyright -->
         <div class="footer-copyright">
-          <p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+          <p>Copyright © 2018 Science Mom</p>
         </div>
         <!-- /footer copyright -->
 
